@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<meta charset="UTF-8">
+<title>Personvern Video</title>
+<head>
+<style>
+body {
+   background-image: url("https://i.pcmag.com/imagery/roundups/04VzSWJe9lGXdR5SiSOPDQb-1.1589991616.fit_lim.size_850x490.jpg");
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: transparent;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
+}
+
+li a:hover:not(.Video) {
+  background-color: rgb(233, 235, 252, 0.2);
+}
+
+.Video {
+  background-color: rgb(166, 190, 255, 0.3);
+}
+.item1 {
+  font-family: "copperplate";
+  color: white;
+}
+
+.item2 {
+  font-family: "copperplate";
+  color: white;
+}
+
+
+
+ 
+
+.item2 { grid-area: hoveddel; height: 0px; font-size: 20px; background-color: transparent ;}
+
+
+.grid-container {
+  display: grid;
+  grid-template-areas:
+   'hoveddel ';
+  grid-gap: 2px;
+  background-color: transparent;
+  padding: 0px;
+}
+
+.grid-container > div {
+  text-align: center;
+  padding: 100px;
+}
+
+</style>
+</head>
+<body>
+    <ul>
+        <li style="float:center"><a class="active" href="nettside personvern.html">Personvern</a></li>
+        <li style="float:center"><a class="gdpr" href="GDPR.html">GDPR</a></li>
+        <li style="float:center"><a class="Video" href="Video.html">Video</a></li>
+        <li style="float:center"><a class="Kilder" href="Kilder.html">Kilder</a></li>
+        <li style="float:right"> 
+          
+        <!-- (3 linjer meny)
+        <a  href="#" class="nav">
+            <div class="one"></div>
+            <div class="two"></div>
+            <div class="three"></div>
+        </a>
+      -->
+  
+        </li>
+      </ul> 
+    
+    
+      <div class="grid-container">
+        <div class="item2"><p>Dette er videoen som skal fortelle deg litt mer om personvern og hva det er.</p> 
+          <video width="700" controls>
+            <source src="fullvideo.mp4" type="video/mp4">
+            Your browser does not support HTML video.
+          </video></div>  
+    </div>
+          
+</body>
+</html>
